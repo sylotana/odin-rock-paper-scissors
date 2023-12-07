@@ -1,0 +1,60 @@
+include mixins/OG
+- const title = "Rock Paper Scissors";
+doctype
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title= title
+    link(rel="stylesheet", href="bundle.css")
+
+  -
+    const propertiesOG = {
+      'site_name': 'web.dev',
+      'title': 'Yamal.dev',
+      'type': 'website',
+      'url': 'https://yamal',
+      'locale': 'en_US',
+      'image': 'https://images',
+      'image:secure_url': 'https://images',
+      'image:type': 'image/jpeg',
+      'image:width': '1200',
+      'image:height': '630',
+      'image:alt': 'Happy people are smiling',
+
+      'image': 'https://images',
+      'image:secure_url': 'https://images',
+      'image:type': 'image/jpeg',
+      'image:width': '1200',
+      'image:height': '630',
+      'image:alt': 'Happy people are smiling',
+      'twitter:card': 'summary',
+      'vk:image': 'https://images',
+      //- article: {
+        //- published_time
+        //- modified_time
+        //- expiration_time
+        //- author
+        //- tag
+      //- },
+      //- video: {
+        //- movie: {
+          //- actor: {
+            //- role
+          //- }
+          //- director
+          //- writer
+          //- duration
+          //- release_date
+          //- tag
+        //- }
+      //- }
+    }
+
+  +OG(propertiesOG)
+
+
+  body
+    h1= title
+
+    script(src='app.js')
