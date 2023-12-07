@@ -24,7 +24,7 @@ function playRound(playerSelection, computerSelection) {
 
   if (playerSelection === computerSelection) {
     console.log('TIES');
-    return 0;
+    return -1;
   }
 
   if (selection[playerSelection] === computerSelection) {
