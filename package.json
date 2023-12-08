@@ -36,6 +36,6 @@
     "stylelint-config-standard-scss": "^9.0.0"
   },
   "browserslist": [
-    "last 5 versions"
+    "last 1 versions"
   ]
 }

@@ -111,7 +111,7 @@ function scss() {
 
 
 function assets() {
-  return gulp.src('./src/images/**/*.{jpg,png,svg,gif,ico,webp,avif}')
+  return gulp.src('./src/assets/**/*.{jpg,png,svg,gif,ico,webp,avif}')
     .pipe(gulp.dest('./build/images'))
     .pipe(browserSync.reload({stream: true}));
 }
@@ -130,7 +130,7 @@ function clean() {
 
 
 function watchFiles() {
-  gulp.watch(['./src/views/*.pug'], pug);
+  gulp.watch(['./src/views/**/*.pug'], pug);
   gulp.watch(['./src/**/*.html'], html);
   gulp.watch(['./src/**/*.scss'], scss);
   gulp.watch(['./src/**/*.css'], css);
